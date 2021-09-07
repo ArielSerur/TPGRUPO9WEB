@@ -1,12 +1,133 @@
-<! DOCTYPE html>
-<html lang = "en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset = "UTF-8">
-    <meta http-equiv = "X-UA-Compatible" content = "IE = edge">
-    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
-    <title> Documento </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
+    <header>
+        <img src="fotos/logo.jpg" alt="fotolog">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="INDEX.html">Home</a></li>
+            <li><a href="Establecimiento.html">Establecimiento</a></li>
+            <li><a href="Inscripcion.html">Inscripcion</a></li>
+            <li><a href="Cakendario.html">Cakendario</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>
+        </ul>
 
+    </nav>
+    <main>
+        <section>
+            <article>
+             <p>Inscribite wachim</p>
+
+             <!--  Esto es el formulario de busca el curso e inscribite abajo de todo -->
+
+              <form action="#" method="post">
+               
+                  <label for="provincias">Provincias</label>
+                  <select id="provincias" name="provincias">
+                      <option value="1"></option>
+                       <option value="2">C&oacute;rdoba</option>
+                      <option value="3">Entre R&iacute;os</option>
+                      <option value="4">Buenos Aires</option>
+                 </select>
+                 
+            <!-- Deben existir los siguientes campos con información de ejemplo sin importar el establecimiento 
+                elegido ■Nombre del establecimiento (texto fijo) ■ Dirección ■ Localidad ■ Provincia ■ Email-->
+                 <ul>
+                    <li>Dirección: </li>
+                    <li>Localidad: </li>
+                    <li>Provincia: </li>
+                    <li>Email:     </li> 
+                 </ul>
+
+                 <br>
+            
+           <!--  Esto es el formulario para elegir 
+                    establecimiento abajo de todo -->
+               
+                  <label for="Establecimiento">Selecciona el establecimiento</label>
+                  <select id="Establecimiento" name="Establecimiento">
+                      <option value="1"></option>
+                      <option value="2">UBA</option>
+                     <option value="3">UADE</option>
+                     <option value="4">Unlam</option>
+                   </select>
+                   <br>
+
+                <!-- formulario para elegir curso -->
+
+                   <label for="curso">curso</label>
+                  <select id="curso" name="curso">
+                      <option value="1"></option>
+                     <option value="2">aleman</option>
+                     <option value="3">parcel</option>
+                       <option value="4">ingles</option>
+                    </select>
+                    <br>
+            
+            <!--  Esto es el formulario para elegir modalidad -->
+        
+                    <label for="HorariosYmodalidad">Horarios y Modalidad</label>
+                    <select id="HorariosYmodalidad" name="HorariosYmodalidad">
+                        <option value="1"></option>
+                        <option value="2">Miercoles y viernes Presencial</option>
+                        <option value="3">Sabados virtual</option>
+                      <option value="4">Martes y jueves virtual</option>
+                  </select>
+              </form>
+             <br>
+
+
+            
+                <input type="submit" value=" Inscribite!">
+            </article>
+        </section>
+
+        <aside>
+
+        </aside>
+
+        <!--Primer footer con nombre y dni de integrantes -->
+        <footer> 
+
+            <ul>
+                <li>Ariel Yamil Serur - 40009523</li>
+                <li>Nombre Completo y DNI </li>
+                <li>Nombre Completo y DNI </li>
+                <li>Nombre Completo y DNI </li>
+            </ul>
+       </footer>
+
+             <!-- Footer con el menu inferior  -->
+        <footer>   
+            <h6>Menu inferior</h6>
+            <ul>
+                <li><a href="INDEX.html"><h6>Home</h6></a></li>
+                <li><a href="Establecimiento.html"><h6> Establecimiento</h6></a></li>
+                <li><a href="Inscripcion.html"><h6>Inscripcion</h6></a></li>
+                <li><a href="Cakendario.html"><h6>Cakendario</h6></a></li>
+                <li><a href="Contacto.html"><h6>Contacto</h6></a></li>
+            </ul>
+        </footer>
+
+        <!--Links a redes sociales-->
+        <footer>
+            <h6>Redes Sociales</h6>
+            <ul>
+                <li><a href="https://www.facebook.com"><h6>Facebook</h6></a></li>
+                <li><a href="https://twitter.com"><h6> Twitter</h6></a></li>
+                <li><a href="https://www.instagram.com"><h6>Instagram</h6></a></li>
+            </ul>
+
+        </footer>
+    </main>
+    
+    
 </body>
 </html>
