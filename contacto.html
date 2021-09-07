@@ -1,1 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header><!-- Cabecera con logo -->
+        
+    </header>
+    <nav> <!-- Navegador -->
+        <ul>
+            <li><a href="INDEX.html">Home</a></li>
+            <li><a href="Establecimiento.html">Establecimiento</a></li>
+            <li><a href="Inscripcion.html">Inscripcion</a></li>
+            <li><a href="Cakendario.html">Cakendario</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <!-- CONTACTO -->
+            <article>
+                <h4>CONTACTO</h4>
+                <form action="#" method="post" >
 
+                    <!--ingresa direccion-->
+                    <label for="Ubicacion">Ingrese su ubicacion</label>
+                    <input id="Ubicacion" type="text" name="Ubicacion" placeholder="Ingrese su Ubicacion" >
+                    <br>
+                   
+                    <!-- ingresa telefono-->
+                    <label for="tel">Ingresa tu numero de telefono
+                        <input id="tel" type="tel" name="tel" placeholder="Ingrese su Telefono" 
+                               pattern="[0-9]{8,}" required>
+                    </label>
+                    <br>
+
+                    <!--ingresa numero celular-->
+                    <label for="cel">Ingresa tu numero celular
+                        <input id="cel" type="cel" name="cel" placeholder="Ingrese numero de celular" 
+                               pattern="[0-9]{8,}" required>
+                    </label>
+                    <br>
+                   
+                    <!--ingresa email-->
+                <label for="mail">Ingresa tu email</label>
+                <input id="mail" type="email" name="emails" placeholder="Ingrese su email" required>
+                <br>
+
+                    <input type="submit" value="Enviar">
+                </form>
+            </article>
+
+            <!-- DATOS DE CONTACTO -->
+            <article>
+                <h4>Datos de Contacto</h4>
+                <ul>
+                    <li>Direccion</li>
+                    <li>Telefono</li>
+                    <li>Celular</li>
+                    <li>Email</li>
+                    <li>Web</li>
+                </ul>
+            </article>
+
+            <article> <!--ACA VA EL MAPA-->
+                <h4>Ubicacion</h4>
+                <a href="https://www.google.com.ar/maps/place/La+Plata,+Provincia+de+Buenos+Aires/@-34.9204529,-57.9881899,13z">
+                    <img src="fotos/Mapa.jpg"  alt=" Mapa ">
+                </a>
+            </article>
+
+        </section>
+        <aside>
+
+        </aside>
+    </main>
+    <footer>
+        <!--Primer footer con nombre y dni de integrantes -->
+        <footer> 
+
+            <ul>
+                <li>Ariel Yamil Serur - 40009523</li>
+                <li>Nombre Completo y DNI </li>
+                <li>Nombre Completo y DNI </li>
+                <li>Nombre Completo y DNI </li>
+            </ul>
+       </footer>
+
+             <!-- Footer con el menu inferior  -->
+        <footer>   
+            <h6>Menu inferior</h6>
+            <ul>
+                <li><a href="INDEX.html"><h6>Home</h6></a></li>
+                <li><a href="Establecimiento.html"><h6> Establecimiento</h6></a></li>
+                <li><a href="Inscripcion.html"><h6>Inscripcion</h6></a></li>
+                <li><a href="Cakendario.html"><h6>Cakendario</h6></a></li>
+                <li><a href="Contacto.html"><h6>Contacto</h6></a></li>
+            </ul>
+        </footer>
+
+        <!--Links a redes sociales-->
+        <footer>
+            <h6>Redes Sociales</h6>
+            <ul>
+                <li><a href="https://www.facebook.com"><h6>Facebook</h6></a></li>
+                <li><a href="https://twitter.com"><h6> Twitter</h6></a></li>
+                <li><a href="https://www.instagram.com"><h6>Instagram</h6></a></li>
+            </ul>
+
+        </footer>
+
+    </footer>
+</body>
+</html>
