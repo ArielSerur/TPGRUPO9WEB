@@ -89,7 +89,7 @@ body {
   color: var(--colorFont);
   transition: all 0.3s;
   display: block;
-  padding: 1.6rem 5rem;
+  padding: 1.6rem 3rem;
   text-align: center;
 }
 
@@ -97,7 +97,7 @@ body {
   background-color: var(--colorPrincipal);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
   .navegacion {
     flex-direction: row;
   }
@@ -396,4 +396,146 @@ input:hover {
 .boton:hover {
   color: #fff;
   background-color: var(--colorPrincipal);
+}
+
+/*
+Ariel Serur CONTACTOS
+*/
+
+.mainContacto {
+  background-color: var(--colorSecundario);
+  width: 95%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  box-sizing: border-box;
+  border-radius: 20px;
+  justify-content: space-between;
+  -webkit-box-shadow: 0px 7px 15px 6px rgba(0, 0, 0, 0.58);
+  -moz-box-shadow: 0px 7px 15px 6px rgba(0, 0, 0, 0.58);
+  box-shadow: 0px 7px 15px 6px rgba(0, 0, 0, 0.58);
+}
+#textarea {
+  resize: none;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  width: 100%;
+  border: none;
+}
+.enviar {
+  background-color: #fff;
+  margin-left: 210px;
+}
+.item1cont input {
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  height: 3.5rem;
+  border: none;
+}
+.item1cont {
+  order: 1;
+  width: 33%;
+  height: 33%;
+  margin: 10px 70px 0px 150px;
+  padding: 100px 50px 5px 50px;
+  text-align: left;
+  box-sizing: border-box;
+  border-radius: 150px;
+}
+.item2cont li {
+  list-style: none;
+}
+.item2cont svg {
+  text-align: center;
+  display: inline;
+  padding-left: 3px;
+  padding-right: 3px;
+  background-color: black;
+}
+.item2cont {
+  order: 2;
+  width: 45rem;
+  height: 33%;
+  margin: 10px 0px 0px 50px;
+  padding: 100px 0px 5px 0px;
+  text-align: left;
+
+  border-radius: 150px;
+}
+.item3cont {
+  padding: 10px 50px 20px 150px;
+  text-align: left;
+}
+iframe {
+  width: 95%;
+}
+/*
+Ariel Serur calendario curso
+*/
+.calendarioCursos h2 {
+  text-align: center;
+  margin: 10rem;
+}
+.calendarioCursos h3 {
+  margin: 10px 0px 0px 50px;
+}
+.calendarioCursos h3:last-of-type {
+  border-top: 1px solid var(--colorSecundario);
+  padding-top: 30px;
+  width: 90%;
+}
+.tituloFiltrar {
+  display: flex;
+  margin: 20px 200px 20px 20px;
+  padding: 0cm 0cm 0cm 5cm;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+.mes1CalCurso {
+  display: flex;
+  height: auto;
+  margin: 20px 20px 20px 20px;
+  padding: 20px 20px 20px 10px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.esta1 {
+  gap: 20px;
+  display: flex;
+  width: 90%;
+  height: 33%;
+  margin: 20px 20px 20px 20px;
+  padding: 20px 20px 20px 20px;
+  justify-content: center;
+  /*estilo del la caja*/
+  background-color: var(--colorSecundario);
+  box-sizing: border-box;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 7px 15px 6px rgba(0, 0, 0, 0.58);
+  -moz-box-shadow: 0px 7px 15px 6px rgba(0, 0, 0, 0.58);
+  box-shadow: 0px 7px 15px 6px rgba(0, 0, 0, 0.58);
+}
+.fotoCal {
+  width: 100%;
+  height: 100%;
+}
+.datoCal h4 {
+  font-size: 110%;
+}
+.datoCal p {
+  font-size: 80%;
+  line-height: 25px;
+}
+.datoCal {
+  color: #fff;
+  margin: 0px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.img-profe {
+  text-align: left;
 }
