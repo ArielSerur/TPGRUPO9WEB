@@ -89,7 +89,7 @@ body {
   color: var(--colorFont);
   transition: all 0.3s;
   display: block;
-  padding: 1.6rem 3rem;
+  padding: 1.6rem 5rem;
   text-align: center;
 }
 
@@ -97,9 +97,28 @@ body {
   background-color: var(--colorPrincipal);
 }
 
+.carrusel {
+  margin: 0;
+  text-align: center;
+  margin-top: 1.5em;
+}
+
 @media (min-width: 1000px) {
   .navegacion {
     flex-direction: row;
+  }
+}
+
+@media (min-width: 1000px) {
+  .navegacion__a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: var(--colorFont);
+    transition: all 0.3s;
+    display: block;
+    padding: 1.6rem 3rem;
+    text-align: center;
   }
 }
 
@@ -288,7 +307,7 @@ h2 {
 
 @media (min-width: 768px) {
   .buscador input {
-    width: 100rem;
+    width: 80rem;
   }
 }
 
@@ -308,18 +327,17 @@ input:hover {
   background-color: var(--colorSecundario);
   padding: 2rem;
   border-radius: 1rem;
-  transition: all 0.3s;
 }
 
 @media (min-width: 768px) {
   .caja {
     background-color: transparent;
+    transition: all 0.3s;
   }
-}
-
-.caja:hover {
-  box-shadow: 4px 4px 8px 1px rgba(0, 0, 0, 0.58);
-  cursor: pointer;
+  .caja:hover {
+    box-shadow: 4px 4px 8px 1px rgba(0, 0, 0, 0.58);
+    cursor: pointer;
+  }
 }
 
 .establecimiento {
@@ -513,7 +531,7 @@ Ariel Serur calendario curso
 */
 .calendarioCursos h2 {
   text-align: center;
-  margin: 5rem;
+  margin: 10rem;
 }
 .calendarioCursos h3 {
   margin: 10px 0px 0px 50px;
@@ -533,6 +551,7 @@ Ariel Serur calendario curso
 .mes1CalCurso {
   display: flex;
   height: auto;
+  margin: 20px 20px 20px 20px;
   padding: 20px 20px 20px 10px;
   align-items: flex-start;
   flex-wrap: wrap;
@@ -565,7 +584,6 @@ Ariel Serur calendario curso
   font-size: 80%;
   line-height: 25px;
 }
-
 .datoCal {
   color: #fff;
   margin: 0px 0px 0px 0px;
@@ -594,6 +612,7 @@ Ariel Serur calendario curso
   margin: 1em auto;
   border-radius: 15%;
 }
+
 .pagina h3 {
   text-align: center;
 }
@@ -623,6 +642,7 @@ Ariel Serur calendario curso
 /*lauty mapa*/
 .map-responsive {
   display: flex;
+  gap: 0.2em;
   align-items: center;
   flex-direction: column;
 }
@@ -631,6 +651,7 @@ Ariel Serur calendario curso
   .map-responsive {
     display: flex;
     flex-direction: row;
+
     gap: 0.2em;
     justify-content: space-evenly;
   }
@@ -647,8 +668,94 @@ Ariel Serur calendario curso
   border-radius: 15%;
 }
 
-.carrusel {
+/*lauty facebook instagram hover*/
+.svg:hover {
+  filter: invert(0.5);
+}
+
+.map-responsive iframe:hover {
+  -webkit-transform: scale(1.3);
+  transition: all 0.3s;
+}
+
+.map-responsive img:hover {
+  -webkit-transform: scale(1.3);
+  transition: all 0.3s;
+}
+
+.box {
+  width: 12em;
+  height: 12em;
+  border: 3px solid var(--colorPrincipal);
+  transition: all 0.3s;
+}
+
+.box:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.pagina a {
+  text-decoration: none;
+  color: #364f5c;
+}
+
+@media (min-width: 1024px) {
+  .box {
+    width: 10em;
+    height: 10em;
+    border: 3px solid #70777a;
+  }
+}
+
+.algo {
+  width: 100%;
+  padding: 16px;
   margin: 0;
-  text-align: center;
-  margin-top: 1.5em;
+  background-color: #364f5c;
+  margin-bottom: 3em;
+  border-radius: 1em;
+  float: center;
+}
+
+.algo h1 {
+  color: white;
+}
+
+.algo label {
+  color: white;
+  width: 72px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.algo input[type="text"],
+.algo input[type="email"] {
+  width: 180px;
+  padding: 3px 10px;
+  border: 1px solid #f6f6f6;
+  border-radius: 3px;
+  background-color: #f6f6f6;
+  margin: 8px 0;
+  display: inline-block;
+}
+
+.algo input[type="submit"] {
+  width: 100%;
+  padding: 8px 16px;
+  margin-top: 32px;
+
+  border-radius: 5px;
+  display: block;
+  color: #fff;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  border-radius: 3px;
+  margin: 8px 0;
+  /*resize: vertical | horizontal | none | both*/
+  resize: none;
+  display: block;
 }
