@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Material+Icons+Outlined">
-
+  <script src="javascript/localstorage.js"></script>   <!-- JS PARA ALMACENAR DATOS DEL FORM -->
 
 </head>
 
@@ -183,16 +183,16 @@
 
 
       <aside class="algo">
-        <form action="#" target="" method="get" name="formDatosPersonales">
+        <form id="formIndex" action="#" target="" method="get" name="formDatosPersonales">
           <h1>Inscripción</h1>
           <label for="nombre">Nombre</label>
-          <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" />
+          <input type="text" name="nombre" id="nombreIndex" placeholder="Escribe tu nombre" />
 
           <label for="apellidos">Apellido</label>
-          <input type="text" name="apellidos" id="apellidos" placeholder="1r Apellido" />
+          <input type="text" name="apellidos" id="apellidoIndex" placeholder="1r Apellido" />
 
           <label for="email" />Email</label>
-          <input type="email" name="email" id="email" placeholder="email" required />
+          <input type="email" name="email" id="emailIndex" placeholder="email" required />
 
 
 

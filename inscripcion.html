@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="javascript/inscripcion.js"></script>
     <title>Inscripcion</title>
   </head>
 
@@ -87,38 +88,39 @@
         <p>El precio es de $0000.-</p>
       </section>
       <section>
-        <form action="#" method="POST" class="flex-inscripcion">
+        <form id="form"  action="#" name="form" method="" class="flex-inscripcion">
           <div class="flex">
             <div>
               <label for="nombre">Nombre</label>
-              <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" autofocus required />
+              <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" autofocus  />
             </div>
             <div>
               <label for="apellido">Apellido</label>
-              <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido" required />
+              <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido"  />
             </div>
           </div>
           <div class="flex">
             <div>
               <label for="telefono">Teléfono</label>
-              <input type="tel" id="telefono" tel="telefono" placeholder="Ingrese su nro de teléfono" required />
+              <input type="tel" id="telefono" tel="telefono" placeholder="Ingrese su nro de teléfono" />
             </div>
             <div>
               <label for="">Email</label>
-              <input type="email" id="email" name="email" placeholder="Ingrese su email" required />
+              <input type="email" id="email" name="email" placeholder="Ingrese su email"  />
             </div>
           </div>
           <div class="flex">
             <div>
               <label for="provincia">Provincia</label>
-              <input type="text" id="provincia" name="provincia" placeholder="Ingrese la provincia" required />
+              <input type="text" id="provincia" name="provincia" placeholder="Ingrese la provincia"  />
             </div>
             <div>
               <label for="ciudad">Ciudad</label>
-              <input type="text" id="ciudad" name="ciudad" placeholder="Ingrese la ciudad" required />
+              <input type="text" id="ciudad" name="ciudad" placeholder="Ingrese la ciudad"  />
             </div>
           </div>
           <input type="submit" value="INSCRIBITE" class="boton-inscripcion" />
+          <div id="mensaje" class="error"></div>
         </form>
       </section>
     </main>
