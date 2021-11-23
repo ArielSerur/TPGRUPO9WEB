@@ -10,6 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/ResponsiveAri.css" />
+    <script src="js/jquery-3.6.0.min.js"></script>
+    
     <title>Calendario Cursos</title>
   </head>
 
@@ -83,147 +86,150 @@
       <section class="tituloFiltrar">
         <label for="establecimiento">Filtrar por</label>
         <select id="establecimiento" name="establecimiento">
-          <option value="1">Establecimiento</option>
-          <option value="2">fake2</option>
-          <option value="3">fake3</option>
+          <option value="">Establecimiento</option>
+          <option value="SanJusto">San Justo</option>
+          <option value="PuertoMadero">Puerto Madero</option>
         </select>
         <label for="idioma"></label>
         <select id="idioma" name="idioma">
-          <option value="1">Idioma</option>
-          <option value="2">Ingles</option>
-          <option value="3">Español</option>
+          <option value="">Idioma</option>
+          <option value="IN">Ingles</option>
+          <option value="ES">Español</option>
+          <option value="AL">Aleman</option>
+          <option value="IT">Italiano</option>
         </select>
+        <button class="boton-inscripcion btnFiltrar">Filtrar</button>
       </section>
 
-      <h3>Mes 1</h3>
+      <h3 id="mes1">Mes 1</h3>
 
       <section class="mes1CalCurso">
         <article>
           <!--1-->
-          <div class="esta1">
+          <div class="esta1 cont1" data-idioma="IN" data-lugar="SanJusto">
             <div>
               <img src="img/establecimientoFake.jpg" alt="faker" class="fotoCal" />
             </div>
             <div class="datoCal">
-              <h4>IDIOMA - NIVEL</h4>
-              <p>Modalidad:</p>
-              <p>Dias y horarios:</p>
-              <p>Fecha de Inicio:</p>
-              <p>Sede:Establecimiento</p>
-              <p>Precio: $0000.-</p>
+              <h4>Ingles - 1°</h4>
+              <p>Presencial</p>
+              <p>Mie-Vie 14a16</p>
+              <p>Inicio:5/1</p>
+              <p>San Justo</p>
+              <p>Precio: $2000.-</p>
               <a href="inscripcion.html"><input type="submit" value="Inscribirse" /></a>
             </div>
           </div>
-          <div class="esta1">
+          <div class="esta1 cont1"  data-idioma="IT" data-lugar="PuertoMadero">
             <div>
               <img src="img/establecimientoFake.jpg" alt="faker" class="fotoCal" />
             </div>
             <div class="datoCal">
-              <h4>IDIOMA - NIVEL</h4>
-              <p>Modalidad:</p>
-              <p>Dias y horarios:</p>
-              <p>Fecha de Inicio:</p>
-              <p>Sede:Establecimiento</p>
-              <h6>Precio:$0000.-</h6>
+              <h4>Italiano - 3°</h4>
+              <p>Virtual</p>
+              <p>Mar-Jue 16a18</p>
+              <p>Inicio:6/1</p>
+              <p>Puerto Madero</p>
+              <p>$1500.-</p>
               <a href="inscripcion.html"><input type="submit" value="Inscribirse" /></a>
             </div>
           </div>
         </article>
         <article>
           <!--2-->
-          <div class="esta1">
+          <div class="esta1 cont1" data-idioma="ES" data-lugar="PuertoMadero">
             <div>
               <img src="img/establecimientoFake.jpg" alt="faker" class="fotoCal" />
             </div>
             <div class="datoCal">
-              <h4>IDIOMA - NIVEL</h4>
-              <p>Modalidad:</p>
-              <p>Dias y horarios:</p>
-              <p>Fecha de Inicio:</p>
-              <p>Sede:Establecimiento</p>
-              <h6>Precio:$0000.-</h6>
+              <h4>Español - 2°</h4>
+              <p>presencial</p>
+              <p>Jue-Sab 16a18</p>
+              <p>Inicio:13/1</p>
+              <p>Puerto Madero</p>
+              <p>$2000.-</p>
               <a href="inscripcion.html"><input type="submit" value="Inscribirse" /></a>
             </div>
           </div>
-          <div class="esta1">
+          <div class="esta1 cont1" data-idioma="AL" data-lugar="SanJusto">
             <div>
               <img src="img/establecimientoFake.jpg" alt="faker" class="fotoCal" />
             </div>
             <div class="datoCal">
-              <h4>IDIOMA - NIVEL</h4>
-              <p>Modalidad:</p>
-              <p>Dias y horarios:</p>
-              <p>Fecha de Inicio:</p>
-              <p>Sede:Establecimiento</p>
-              <h6>Precio:$0000.-</h6>
+              <h4>Aleman - 6°</h4>
+              <p>Semipresencial</p>
+              <p>Lun-Jue 16a18</p>
+              <p>Inicio:3/1</p>
+              <p>San Justo</p>
+              <p>$3000.-</p>
               <a href="inscripcion.html"><input type="submit" value="Inscribirse" /></a>
             </div>
           </div>
         </article>
       </section>
 
-      <h3>Mes 2</h3>
+      <h3 id="mes2">Mes 2</h3>
 
       <section class="mes1CalCurso">
         <article>
           <!--1-->
-          <div class="esta1">
+          <div class="esta1 cont2" data-idioma="ES" data-lugar="SanJusto">
             <div>
               <img src="img/establecimientoFake.jpg" alt="faker" class="fotoCal" />
             </div>
             <div class="datoCal">
-              <h4>IDIOMA - NIVEL</h4>
-              <p>Modalidad:</p>
-              <p>Dias y horarios:</p>
-              <p>Fecha de Inicio:</p>
-              <p>Sede:Establecimiento</p>
-              <p>Precio: $0000.-</p>
+              <h4>Español-1°</h4>
+              <p>Virtual</p>
+              <p>Mie-Vie 14a16</p>
+              <p>Inicio:2/2</p>
+              <p>San Justo</p>
+              <p>$4000.-</p>
 
               <a href="inscripcion.html"><input type="submit" value="Inscribirse" /></a>
             </div>
           </div>
-          <div class="esta1">
+          <div class="esta1 cont2" data-idioma="IT" data-lugar="PuertoMadero">
             <div>
               <img src="img/establecimientoFake.jpg" alt="faker" class="fotoCal" />
             </div>
             <div class="datoCal">
-              <h4>IDIOMA - NIVEL</h4>
-              <p>Modalidad:</p>
-              <p>Dias y horarios:</p>
-              <p>Fecha de Inicio:</p>
-              <p>Sede:Establecimiento</p>
-              <h6>Precio:$0000.-</h6>
-              <a href="inscripcion.html"><input type="submit" value="Inscribirse" /></a>
+              <h4>Italiano - 3°</h4>
+              <p>Virtual</p>
+              <p>Mar-Jue 16a18</p>
+              <p>Inicio:1/2</p>
+              <p>Puerto Madero</p>
+              <p>$1500.-</p>
+              <a href="inscripcion.html"><input type="submit" value="Inscribirse" class="buttonInscribir" /></a>
             </div>
           </div>
         </article>
         <article>
           <!--2-->
-          <div class="esta1">
+          <div class="esta1 cont2" data-idioma="AL" data-lugar="SanJusto">
             <div>
               <img src="img/establecimientoFake.jpg" alt="faker" class="fotoCal" />
             </div>
             <div class="datoCal">
-              <h4>IDIOMA - NIVEL</h4>
-              <p>Modalidad:</p>
-              <p>Dias y horarios:</p>
-              <p>Fecha de Inicio:</p>
-              <p>Sede:Establecimiento</p>
-              <h6>Precio:$0000.-</h6>
+              <h4>Aleman - 6°</h4>
+              <p>Semipresencial</p>
+              <p>Lun-Jue 16a18</p>
+              <p>Inicio:7/2</p>
+              <p>San Justo</p>
+              <p>$3000.-</p>
               <a href="inscripcion.html"><input type="submit" value="Inscribirse" /></a>
             </div>
           </div>
-          <div class="esta1">
+          <div class="esta1 cont2" data-idioma="IN" data-lugar="SanJusto">
             <div>
               <img src="img/establecimientoFake.jpg" alt="faker" class="fotoCal" />
             </div>
             <div class="datoCal">
-              <h4>IDIOMA - NIVEL</h4>
-              <p>Modalidad:</p>
-              <p>Dias y horarios:</p>
-              <p>Fecha de Inicio:</p>
-              <p>Sede:Establecimiento</p>
-              <h6>Precio:$0000.-</h6>
+              <h4>Ingles - 1°</h4>
+              <p>Presencial</p>
+              <p>Mie-Vie 14a16</p>
+              <p>Inicio:9/2</p>
+              <p>San Justo</p>
+              <p>Precio: $2000.-</p>
               <a href="inscripcion.html"><input type="submit" value="Inscribirse" /></a>
             </div>
           </div>
@@ -232,7 +238,7 @@
 
       <aside></aside>
     </main>
-
+    <script src="js/FiltroAriel.js"></script>
     <!--Links a redes sociales-->
     <footer class="header-fondo">
       <div class="contenedor">
@@ -288,6 +294,7 @@
       </div>
       </div>
     </footer>
+    
   </body>
 
   </html>
