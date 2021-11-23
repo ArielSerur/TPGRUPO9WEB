@@ -459,17 +459,20 @@ input:hover {
 /*
 Ariel Serur CONTACTOS
 */
-
+@media screen and (min-width: 768px) {
+  .mainContacto {
+  }
+}
 .mainContacto {
   background-color: var(--colorSecundario);
   width: 95%;
   margin: 50px auto;
   display: flex;
   flex-direction: row;
-  align-items: stretch;
+  align-items: baseline;
   box-sizing: border-box;
   border-radius: 20px;
-  justify-content: space-between;
+  justify-content: flex-start;
   -webkit-box-shadow: 0px 7px 15px 6px rgba(0, 0, 0, 0.58);
   -moz-box-shadow: 0px 7px 15px 6px rgba(0, 0, 0, 0.58);
   box-shadow: 0px 7px 15px 6px rgba(0, 0, 0, 0.58);
@@ -518,8 +521,8 @@ Ariel Serur CONTACTOS
   order: 2;
   width: 45rem;
   height: 33%;
-  margin: 10px 0px 0px 50px;
-  padding: 100px 0px 5px 0px;
+  margin: 0px 0px 0px 50px;
+  padding: 00px 0px 5px 0px;
   text-align: left;
 
   border-radius: 150px;
@@ -530,6 +533,11 @@ Ariel Serur CONTACTOS
 }
 iframe {
   width: 95%;
+}
+/* Para el formulario Contacto*/
+.errorCompletar {
+  color: red;
+  display: block;
 }
 /*
 Ariel Serur calendario curso
@@ -556,20 +564,22 @@ Ariel Serur calendario curso
 .mes1CalCurso {
   display: flex;
   height: auto;
+  weight: auto;
   margin: 20px 20px 20px 20px;
   padding: 20px 20px 20px 10px;
-  align-items: flex-start;
+  align-items: baseline;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .esta1 {
-  gap: 20px;
+  gap: 10px;
   display: flex;
   width: 90%;
   height: 33%;
-  margin: 20px 20px 20px 20px;
+  margin: 5%;
   padding: 20px 20px 20px 20px;
-  justify-content: center;
+  /* flex-direction: column; */
+
   /*estilo del la caja*/
   background-color: var(--colorSecundario);
   box-sizing: border-box;
@@ -579,14 +589,14 @@ Ariel Serur calendario curso
   box-shadow: 0px 7px 15px 6px rgba(0, 0, 0, 0.58);
 }
 .fotoCal {
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
 }
 .datoCal h4 {
-  font-size: 110%;
+  font-size: 90%;
 }
 .datoCal p {
-  font-size: 80%;
+  font-size: 70%;
   line-height: 25px;
 }
 .datoCal {
@@ -596,7 +606,6 @@ Ariel Serur calendario curso
   flex-direction: column;
   justify-content: space-between;
 }
-
 /*lauty titulo establecimiento*/
 .establecimientos {
   font-size: 90%;
