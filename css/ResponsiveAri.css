@@ -1,0 +1,32 @@
+/*Estilos Celular */
+@media screen and (max-width: 960px) {
+  body {
+    font-size: 70%;
+  }
+  h1 {
+    font-size: 1.6em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  p {
+    font-size: 1em;
+  }
+  img {
+  }
+  .fotoCal {
+    width: auto;
+  }
+  .esta1 {
+    justify-content: space-between;
+    font-size: large;
+    display: flex;
+    text-align: left;
+    flex-direction: column !important;
+    align-items: center;
+  }
+  .buttonInscribir {
+    width: auto;
+  }
+}
+/*Estilos tablet */
