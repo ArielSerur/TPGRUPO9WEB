@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE = edge" />
+  <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script>src</script>
+  <title>Contacto</title>
+</head>
+
+<body>
+  <header class="header-fondo">
+    <div class="contenedor">
+      <div class="header">
+        <div><a href="index.html" class="logo">LOGO</a></div>
+        <div class="redes">
+
+          <a href="https://www.instagram.com/liceoculturalbritanico/">
+            <div class="svg">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="44"
+                height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <rect x="4" y="4" width="16" height="16" rx="4" />
+                <circle cx="12" cy="12" r="3" />
+                <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+              </svg>
+            </div>
+          </a>
+
+          <a href="https://www.facebook.com/liceoculturalbritanico?ref=hl">
+            <div class="svg">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="44"
+                height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+              </svg>
+            </div>
+          </a>
+
+          <a href="https://twitter.com/ingleslcb?lang=es">
+            <div class="svg">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="44"
+                height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+              </svg>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Navegador -->
+  <nav>
+    <ul class="navegacion">
+      <li><a href="index.html" class="navegacion__a">Home</a></li>
+      <li><a href="nosotros.html" class="navegacion__a">Nosotros</a></li>
+      <li>
+        <a href="establecimiento.html" class="navegacion__a">Establecimientos</a>
+      </li>
+      <li>
+        <a href="inscripcion.html" class="navegacion__a">Inscripcion</a>
+      </li>
+      <li>
+        <a href="calendarioCursos.html" class="navegacion__a">Calendario</a>
+      </li>
+      <li><a href="contacto.html" class="navegacion__a">Contacto</a></li>
+    </ul>
+  </nav>
+  <!--Main-->
+  <main>
+    <section class="mainContacto">
+      <!-- CONTACTO -->
+      <article class="item1cont">
+        <h2>CONTACTO</h2>
+        <br />
+
+        <form action="#" method="post" id="form" onsubmit="validaContacto()">
+          <!--ingresa direccion-->
+          <label for="nombreyapellido"></label>
+          <input id="validaNombreYapellido" type="text" name="nombreyapellido" placeholder="Nombre y Apellido" />
+          <span class="errorCompletar">Complete el campo</span>
+          <br />
+          <br />
+
+          <!-- ingresa telefono-->
+          <label for="tel">
+            <input id="tel" type="tel" name="tel" placeholder="Ingrese su Telefono" />
+          </label>
+          <span class="errorCompletar">Complete el campo</span>
+          <br />
+          <br />
+
+          <!--ingresa email-->
+          <label for="mail"></label>
+          <input id="mail" type="email" name="emails" placeholder="Ingrese su email"  />
+          <span class="errorCompletar">Complete el campo</span>
+          <br />
+          <br />
+          <!--ingresa consulta-->
+
+          <textarea name="mensaje" id="textarea" cols="22" rows="5" placeholder="Deja tu mensaje..."></textarea>
+          <br />
+          <input id="btn2" type="submit" value="Enviar" class="boton-inscripcion enviar" />
+        </form>
+
+        <br /><br /><br />
+      </article>
+
+      <!-- DATOS DE CONTACTO -->
+      <article class="item2cont">
+        <h2>Datos de Contacto</h2>
+        <ul>
+          <li>Direccion</li>
+          <li>Telefono</li>
+          <li>Celular</li>
+          <li>Email</li>
+          <li>Web</li>
+        </ul>
+        <div class="redes">
+          <div class="svg">
+            <a href="https://www.instagram.com/" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="44"
+                height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <rect x="4" y="4" width="16" height="16" rx="4" />
+                <circle cx="12" cy="12" r="3" />
+                <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+              </svg>
+            </a>
+          </div>
+          <div class="svg">
+            <a href="https://www.facebook.com/" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="44"
+                height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+              </svg>
+            </a>
+          </div>
+          <div class="svg">
+            <a href="https://twitter.com/home" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="44"
+                height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </article>
+    </section>
+    <section class="item3cont">
+      <!--ACA VA EL MAPA-->
+      <h2>Ubicacion</h2>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26288.029380399483!2d-58.473222960449235!3d-34.55346239999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb42e99ae45d5%3A0x6be432ec9bdf8569!2sInstituto%20de%20Idiomas%20Ingles%20%2F%20Espa%C3%B1ol!5e0!3m2!1ses!2sar!4v1632886751518!5m2!1ses!2sar"
+        width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+  </main>
+  <!--Links a redes sociales-->
+  <footer class="header-fondo">
+    <div class="contenedor">
+      <div class="footer">
+        <div>
+          <strong>Datos del Grupo: </strong>
+          <p>Juarez Lautaro - 43.194.919</p>
+          <p>Serur Ariel - 40.009.523</p>
+          <p>Torres Lucas - 40.543.995</p>
+        </div>
+        <div>
+          <ul>
+            <li><a href="establecimiento.html">Establecimientos</a></li>
+            <li><a href="inscripcion.html">Inscripción</a></li>
+            <li><a href="calendarioCursos.html">Calendario</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="redes">
+
+          <a href="https://www.instagram.com/liceoculturalbritanico/">
+            <div class="svg">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="44"
+                height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <rect x="4" y="4" width="16" height="16" rx="4" />
+                <circle cx="12" cy="12" r="3" />
+                <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+              </svg>
+          </a>
+        </div>
+
+
+        <div class="svg">
+          <a href="https://www.facebook.com/liceoculturalbritanico?ref=hl"><svg xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-brand-facebook" width="44" height="44" viewBox="0 0 24 24"
+              stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+            </svg></a>
+        </div>
+        <div class="svg">
+          <a href="https://twitter.com/ingleslcb?lang=es"><svg xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-brand-twitter" width="44" height="44" viewBox="0 0 24 24"
+              stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+            </svg></a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+  <script src="js/FiltroAriel.js"></script>
+</body>
+
+</html>
